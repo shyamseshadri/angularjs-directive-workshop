@@ -1,0 +1,5 @@
+<div class="landing-page" ng-controller="LandingCtrl as lCtrl">
+  <div class="card-container" ng-repeat="todo in lCtrl.todos">
+    <todo-widget todo-item="todo" when-magic="lCtrl.magic(id, author)"></todo-widget>
+  </div>
+</div>

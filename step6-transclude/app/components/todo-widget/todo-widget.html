@@ -1,0 +1,17 @@
+<div class="todo-card" ng-class="getTodoClass(todoItem)">
+  <div class="row">
+    <div>
+      <span class="title">Author:</span>
+      <span class="author" ng-bind="todoItem.author"></span>
+    </div>
+    <div class="todo-title" ng-bind="todoItem.title"></div>
+    <div>
+      <span class="title">Due On:</span>
+      <span class="date" ng-bind="todoItem.dueOn"></span>
+    </div>
+  </div>
+
+  <div class="row btn-bar pull-right" ng-transclude="">
+
+  </div>
+</div>
